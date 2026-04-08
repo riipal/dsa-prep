@@ -2,7 +2,7 @@ class Solution {
     public int lengthOfLongestSubstring(String s) {
         
         //Approach 01
-        /** int n = s.length();
+        int n = s.length();
         int maxLength = 0;
 
         Map<Character, Integer> map = new HashMap<>();
@@ -18,11 +18,11 @@ class Solution {
             // Calculate current window size and update max
             maxLength = Math.max(maxLength, right - left + 1);
         }
-        return maxLength;*/
+        return maxLength;
 
 
         //Approach 02
-        int max = 0;
+        /** int max = 0;
         int i = 0;
         int j = 0;
 
@@ -38,6 +38,6 @@ class Solution {
             max = Math.max(max, j - i + 1);
             j++;
         }
-        return max;
+        return max;*/
     }
 }
